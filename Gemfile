@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -38,6 +35,10 @@ end
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 
+group 'development' do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+end
 group :production do
   gem 'pg'
   gem 'rails_log_stdout', github: 'heroku/rails_log_stdout'

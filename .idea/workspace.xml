@@ -22,7 +22,7 @@
     <file path="/_task_list.html.erb" changelist="5d9343a2-b4d0-487a-ab2d-729ce029c451" time="1375651588264" ignored="false" />
     <file path="/production.rb" changelist="5d9343a2-b4d0-487a-ab2d-729ce029c451" time="1375652798714" ignored="false" />
     <file path="/Dummy.txt" changelist="5d9343a2-b4d0-487a-ab2d-729ce029c451" time="1375652810420" ignored="false" />
-    <file path="/Gemfile" changelist="5d9343a2-b4d0-487a-ab2d-729ce029c451" time="1375653047846" ignored="false" />
+    <file path="/Gemfile" changelist="5d9343a2-b4d0-487a-ab2d-729ce029c451" time="1375653364784" ignored="false" />
     <file path="$PROJECT_DIR$/../hoplu/config/database.yml" changelist="5d9343a2-b4d0-487a-ab2d-729ce029c451" time="1375653174698" ignored="false" />
     <file path="/database.yml" changelist="5d9343a2-b4d0-487a-ab2d-729ce029c451" time="1375653170408" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +47,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.6393443">
+            <state line="39" column="15" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.6557377">
               <folding />
             </state>
           </provider>
@@ -665,7 +665,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.6393443">
+        <state line="39" column="15" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.6557377">
           <folding />
         </state>
       </provider>
