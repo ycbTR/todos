@@ -1,0 +1,20 @@
+<%- model_class = Task -%>
+
+<%= form_for Task.new, :html => {:class => 'form-horizontal'} do |f| %>
+    <%= f.text_field :name, :class => 'input-xxlarge', :style => "width:99%;", :placeholder => "Enter new task and press enter" %>
+<% end %>
+
+<%= form_for tasks_path, :method => :get, :remote => true, :html => {:class => 'form-horizontal'} do |f| %>
+    List: <%= select_tag "s", options_for_select({"New Tasks" => "new", "Completed Tasks" => "completed"}, params[:s]), :id => "task-state-select" %>
+<% end %>
+
+
+<div id="task-list">
+  <%= render partial: "task_list" %>
+</div>
+
+<script>
+    $('#task-state-select').on('change', function () {
+        $(this).parent('form').submit();
+    });
+</script>
