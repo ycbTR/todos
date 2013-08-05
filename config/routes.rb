@@ -11,7 +11,8 @@ Todos::Application.routes.draw do
   delete 'logout', to: 'sessions#destroy', as: 'logout'
 
 
-  resources :users
+  resources :users, :except => [:index, :show, :destroy]
+
   resources :sessions, :except => [:index, :show]
 
   root "home#index"

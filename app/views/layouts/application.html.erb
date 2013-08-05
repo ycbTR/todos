@@ -50,10 +50,22 @@
               <% if @current_user.nil? %>
                   <%= link_to "Login <i class='icon-signin'></i>".html_safe, new_session_path %>
               <% else %>
-                  <div style="margin-top:10px;">
-                    <%= "Hi #{@current_user.email}" %>
-                    <%= link_to "Logout <i class='icon-signin'></i>".html_safe, logout_url, :method => :delete %>
-                  </div>
+
+                  <ul class="nav navbar-nav pull-right">
+                    <li id="fat-menu" class="dropdown">
+                      <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><%= "Hi #{@current_user.email}" %> <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                        <li>
+                          <%= link_to "<i class='icon-user'></i> My Account".html_safe, edit_user_path(current_user) %>
+                        </li>
+                        <li>
+                          <%= link_to "<i class='icon-signin'></i> Logout".html_safe, logout_url, :method => :delete %>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+
+
               <% end %>
             </li>
           </ul>
